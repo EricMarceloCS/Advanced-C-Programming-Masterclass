@@ -6,22 +6,17 @@ int getTwoElements(int* array, int sum, int* index1, int* index2) {
 
     *index1 = 0;
     *index2 = 0;
-    int lp = 0, rp = 1;
-    bool right = true;
+    int lp = 0, rp = SIZE - 1;
 
-    while(lp < SIZE - 1 && rp < SIZE) {
+    while(lp < rp) {
         if(array[lp] + array[rp] == sum) {
             *index1 = lp;
             *index2 = rp;
             return 1;
         } else if(array[lp] + array[rp] > sum) {
-            break;
-        }else if(right) {
-            rp++;
-            right = false;
+            rp--;
         }else {
             lp++;
-            right = true;
         }
     }
     return 0;
