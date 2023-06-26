@@ -17,11 +17,10 @@ void reverseArrayRecursive(char* array, int size) {
         return;
     }
 
-    char* temp = malloc(sizeof(char));
-    *temp = *array;
+    char temp;
+    temp = *array;
     *array = *(array+size-1*sizeof(char));
-    *(array+(size-1)*sizeof(char)) = *temp;
-    free(temp);
+    *(array+(size-1)*sizeof(char)) = temp;
     reverseArrayRecursive(array+1, size-2);
 
     return;
