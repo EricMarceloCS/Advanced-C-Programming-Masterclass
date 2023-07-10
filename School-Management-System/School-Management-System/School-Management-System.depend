@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1688998752 source:/home/eric/Development/Advanced-C-Programming-Masterclass/School-Management-System/School-Management-System/main.c
+	<stdio.h>
+	<stdlib.h>
+
