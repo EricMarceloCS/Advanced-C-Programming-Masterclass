@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1690225053 source:/home/eric/Development/Advanced-C-Programming-Masterclass/Files/Advanced-Binary-Student-Record/main.c
+	<stdio.h>
+	<stdlib.h>
+
